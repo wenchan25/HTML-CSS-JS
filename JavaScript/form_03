@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8"/>
+	<title> js tutorials </title>	
+	<script type = "text/javascript">
+		function isChecked(){
+			// notice that .checked method is called;
+			var yes_checked = document.getElementById("auto_renew_yes").checked;
+			var no_checked = document.getElementById("auto_renew_no").checked;
+			if (!yes_checked && !no_checked) {
+				alert("please make a choice");
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+	
+	<form action = "submission.html" method="post" onsubmit = "return isChecked();" >
+		<p>do you want to auto-renew your membership</p>
+		Yes<input type = "radio" name = "auto_renew" value = "yes" id ="auto_renew_yes"/><br/>
+		No<input type = "radio" name = "auto_renew" value = "no" id ="auto_renew_no"/><br/>
+		<input type = "submit" value ="submit"/>
+		<br/>
+	</form>
+</body>
+</html> 
