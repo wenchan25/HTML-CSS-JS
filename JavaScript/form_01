@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8"/>
+	<title> JS Tutorials </title>
+	<script type = "text/javascript">
+
+		function writeName (){
+			var welcome_para = document.getElementById("welcome");
+  			var name = document.getElementById("name").value;
+			// note: use name.value because get method only 
+			// get the object;
+			// alert (name);
+			welcome_para.innerHTML = "Welcome " + name;
+		}
+	
+	</script>
+</head>
+
+<body>
+	<p id="welcome"></p>
+	<form>
+		what is your name?<input type ="text" id ="name"/> <br/>
+		<input type = "button" value ="done" onclick="writeName();">
+		
+	</form>
+</body>
+</html> 
