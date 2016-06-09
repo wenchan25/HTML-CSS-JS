@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8"/>
+	<title> js tutorials </title>	
+	<script type = "text/javascript">
+		function isChecked(){
+			var sports = document.getElementById("sports").checked;
+			var electronics = document.getElementById("electronics").checked;
+			var tools = document.getElementById("tools").checked;
+			if (!sports && !electronics && !tools ) {
+				alert("please make a choice");
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+	
+	<form action = "submission.html" method="post" onsubmit = "return isChecked();" >
+		<p>please make a choice</p>
+		sports<input type = "checkbox" name = "interest" value = "sports" id ="sports"/> <br/>
+		electronics<input type = "checkbox" name = "interest" value = "electronics" id ="electronics"/><br/>
+		tools<input type = "checkbox" name = "interest" value = "tools" id ="tools"/><br/>
+		<!-- with the same name, radio button can only choose one, but checkbox can check multiple-->
+		<input type = "submit" value ="submit"/>
+		<br/>
+	</form>
+</body>
+</html> 
