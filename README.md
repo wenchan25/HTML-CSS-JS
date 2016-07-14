@@ -1,3 +1,3 @@
 # HTML-CSS-JS
 
-// This is for the Coursera project, taught by HKST university
+This is for the Coursera project, taught by HKST university
